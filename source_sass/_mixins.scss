@@ -1,1 +1,31 @@
 // Insert your mixins
+@mixin transition-all($time) {
+	-webkit-transition: all $time;
+    -moz-transition: all $time;
+    -ms-transition: all $time;
+    -o-transition: all $time;
+    transition: all $time;
+}
+
+@mixin transition-transform($time) {
+	-webkit-transition: transform $time;
+    -moz-transition: transform $time;
+    -ms-transition: transform $time;
+    -o-transition: transform $time;
+    transition: transform $time;
+}
+
+@mixin transition-height($time) {
+	-webkit-transition: height $time;
+    -moz-transition: height $time;
+    -ms-transition: height $time;
+    -o-transition: height $time;
+    transition: height $time;
+}
+
+@mixin fade-in($time) {
+	animation: fade-in $time;
+	-moz-animation: fade-in $time;
+	-webkit-animation: fade-in $time;
+	-o-animation: fade-in $time;
+}
