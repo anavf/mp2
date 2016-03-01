@@ -2,6 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative);
 @import url(https://fonts.googleapis.com/css?family=Cardo);
 @import '../public/foundation6_lib/scss/foundation.scss';
+@import '../slick/slick.css';
+@import '../slick/slick-theme.css';
+
+
 
 
 .line {
@@ -58,6 +62,7 @@ ul{
 
 li {
 
+	
 	overflow: hidden;
 	display: inline-block;
 	list-style: none;
@@ -77,11 +82,6 @@ li {
 }
 
 #navBar li:hover {
-	background-color: white;
-}
-
-
-#mobileNav li:hover {
 	background-color: white;
 }
 
@@ -115,12 +115,11 @@ li {
 	z-index: 98;
 	@include transition-all(0.3s);
 
-
-
 	li {
 		padding: 0px 20px;
 
 	}
+
 }
 
 #mobileNav.smaller {
@@ -212,8 +211,7 @@ i {
 	}
 
 	a:hover {
-		color: 
-		scale-color($dark-gray, $lightness: 30%);
+		color: scale-color($dark-gray, $lightness: 50%);
 		@include transition-all(0.3s);
 	}
 }
@@ -264,6 +262,19 @@ i {
    object-fit: contain;
    margin: 0 auto;
 }
+
+.slick-prev:before, 
+.slick-next:before {
+    color: $dark-gray !important;    
+}
+
+#smallSlick {
+	.slick-prev:before, 
+.slick-next:before {
+    display: none !important;    
+}
+}
+
 
 
 #ArtInfo {
@@ -339,7 +350,7 @@ i {
 	}
 
 	#MusLinks a:hover {
-		color: scale-color($dark-gray, $lightness: 30%);
+		color: scale-color($dark-gray, $lightness: 50%);
 		@include transition-all(0.3s);
 	}
 
@@ -374,7 +385,7 @@ i {
     overflow: hidden;
 
     a:hover i{
-		color: scale-color($dark-gray, $lightness: 30%);
+		color: scale-color($dark-gray, $lightness: 60%);
 	}
 
 	i:hover {
@@ -385,7 +396,7 @@ i {
 
     a:hover {
     	@include transition-all(0.3s);
-    	color: scale-color($dark-gray, $lightness: 30%);
+    	color: scale-color($dark-gray, $lightness: 60%);
     }
 
 	@include transition-all(0.3s);

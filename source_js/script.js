@@ -12,13 +12,13 @@ $(document).ready(function(){
   		speed: 300,
   		slidesToShow: 1,
   		adaptiveHeight: true,
-  		arrows: false
 	});
 
 });
 
 
-//MOBILE NAV MENU EXPANDING
+
+//MOBILE NAV HAMBURGER MENU EXPANDING
 $(document).ready(function(){
 
 	$("#hamburger").on("click", function(e){
