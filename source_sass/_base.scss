@@ -67,8 +67,6 @@ li {
 	font-family: $header-font-family;
 	@include transition-all(0.3s);
 
-
-
 	a {
 		display: block;
 		position: relative;
@@ -89,7 +87,6 @@ li {
 
 
 .navHighlight {
-
 		background-color: white;
 		@include transition-all(0.3s);
 }
@@ -290,8 +287,8 @@ i {
 		padding-top: 10px;
 	}
 
-
 }
+
 
 #Music {
 	background-image: url('../media/TheMidnightMooring.NEF-001.jpg');

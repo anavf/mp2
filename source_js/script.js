@@ -12,6 +12,7 @@ $(document).ready(function(){
   		speed: 300,
   		slidesToShow: 1,
   		adaptiveHeight: true,
+  		arrows: false
 	});
 
 });
@@ -109,6 +110,8 @@ $(document).ready(function() {
 
 });
 
+
+
 //POSITION INDICATOR - NAVBAR SMALL
 $(document).ready(function() {
 
@@ -170,7 +173,7 @@ $(document).ready(function() {
 			navArtwork.removeClass("navHighlight").addClass("navRegular");
 		}
 
-		if ( position >= $("#Music").offset().top-60 && position < ($("#Music").offset().top + $("#Music").height() ) ) {
+		if ( position >= $("#Music").offset().top-60 && position < ($(footer).offset().top) ) {
 			navMusic.removeClass("navRegular").addClass("navHighlight");
 		} else if(position + $(window).height() == $(document).height()){
 			navArtwork.removeClass("navHighlight").addClass("navRegular");
@@ -208,7 +211,7 @@ $(document).ready(function() {
 			navArtwork.removeClass("navHighlight").addClass("navRegular");
 		}
 
-		if ( position >= $("#Music").offset().top-60 && position < ($("#Music").offset().top + $("#Music").height() ) ) {
+		if ( position >= $("#Music").offset().top-60 && position < ($(footer).offset().top) ) {
 			navMusic.removeClass("navRegular").addClass("navHighlight");
 		} else if(position + $(window).height() == $(document).height()){
 			navArtwork.removeClass("navHighlight").addClass("navRegular");
@@ -223,7 +226,6 @@ $(document).ready(function() {
 });
 
 //REFERENCES
-//http://codepen.io/Kseso/pen/bfzjC
 //http://kenwheeler.github.io/slick/
 //http://foundation.zurb.com/sites/docs/reveal.html
 //http://api.jquery.com/toggle/
